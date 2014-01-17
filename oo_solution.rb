@@ -28,7 +28,7 @@ class Deck
   def initialize
     @cards = []
     %w[H D S C].each do |suit|
-      %w[2 3 4 5 6 7 8 9 J Q K A].each do |face_value|
+      %w[2 3 4 5 6 7 8 9 10 J Q K A].each do |face_value|
         @cards << Card.new(suit, face_value)
       end
     end
